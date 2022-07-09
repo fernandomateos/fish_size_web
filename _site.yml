@@ -1,0 +1,15 @@
+name: "fish_size_web"
+title: "FishSize Project"
+theme: theme.css
+description: |
+  FishSize Project
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Updates"
+      href: updates.html
+output: distill::distill_article

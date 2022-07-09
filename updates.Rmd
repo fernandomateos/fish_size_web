@@ -1,0 +1,11 @@
+---
+title: "Updates"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Monthly updates about the data collected, people engaged
+
