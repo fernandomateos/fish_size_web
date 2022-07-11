@@ -1,7 +1,7 @@
 ---
-title: "FishSize Project - Data Explorer"
+title: "FishSize Project"
 description: |
-  Learn here about your data
+  ## Data Explorer
 site: distill::distill_website
 ---
 
