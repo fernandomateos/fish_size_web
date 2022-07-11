@@ -1,7 +1,7 @@
 ---
-title: "FishSize Project"
+title: "FishSize Project - Data Explorer"
 description: |
-  Join our citizen science project!
+  Learn here about your data
 site: distill::distill_website
 ---
 
@@ -16,14 +16,32 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-# Why the FishSizeProject app?
+```{r, include=FALSE}
+library(FSAdata)
+library(ggplot2)
+```
 
-FishSizeProject is developed for anglers, divers and everyone who likes observing fish. You will create a log and gallery of your entries and will contribute to important research. FishSizeProject app was developed by scientists at the Nature Research Centre. The app is free, your data will never be used for commercial purposes and we will never reveal your secret fishing spots. Here you can learn more about the data use and privacy.
+[Back Home](https://fernandomateos.com/fishweb2/index.html)
 
 
-![Fish Size app login screen](images/login_screen.jpg){width=40%}
+# Your data
+
+```{r, include=FALSE}
+data(WalleyeErie2)
+WE <- dplyr::filter(WalleyeErie2,year==2010)
 
 
+lenfreq1 <- ggplot(data=WE,aes(x=tl)) +
+  geom_histogram(binwidth=25,boundary=0,closed="left",
+                 fill="gray80",color="black") +
+  scale_y_continuous(name="Number of Fish",expand=expand_scale(mult=c(0,0.05))) +
+  scale_x_continuous(name="Total Length (mm)") +
+  theme_bw()
+```
+
+```{r , echo=FALSE}
+lenfreq1
+```
 
 
 
