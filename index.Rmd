@@ -20,7 +20,8 @@ library(ggplot2)
 
 # Your data
 
-```{r, include=FALSE}
+We can hide the code:
+```{r}
 data(WalleyeErie2)
 WE <- dplyr::filter(WalleyeErie2,year==2010)
 
