@@ -1,5 +1,5 @@
 ---
-title: "FishSize Project"
+title: "FishSize Data Explorer"
 description: |
    Here you can explore your data with a range of plots and statistics.
 site: distill::distill_website
